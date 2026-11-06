@@ -1,16 +1,19 @@
-# React + Vite
+# Student Portal directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive student directory built with React, Vite, and plain CSS. Student records are sample data stored in the browser's localStorage; the app does not connect to a backend.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```powershell
+npm install
+npm run dev
+```
 
-## React Compiler
+`react-router-dom` is already listed in `package.json`. To add it manually to a fresh project, run `npm install react-router-dom`. Open the local URL printed by Vite (usually `http://localhost:5173`). Use `npm run build` to create a production build and `npm run lint` to check the source.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse, search, filter, edit, add, and delete student records.
+- Sample roster of nine Indian students, persisted in localStorage.
+- Light and dark themes, responsive layout, and keyboard-accessible controls.
+- Form validation and brief success/error notifications.
