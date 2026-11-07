@@ -9,7 +9,7 @@ const API_BASE_URL = import.meta.env.DEV
       import.meta.env.VITE_API_BASE_URL ||
       'https://student-management-system-wvmf.onrender.com'
     ).replace(/\/+$/, '')
-    console.log("ul: ",import.meta.env.VITE_API_BASE_URL)
+    console.log("ul: ",import.meta.env)
 const ENDPOINTS = {
   students: '/api/students/',
   teachers: '/api/teachers/',
