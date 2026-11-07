@@ -61,9 +61,16 @@ function Layout() {
         <aside className="sidebar">
           <div className="sidebar-label">Workspace</div>
           <NavLink to="/students" className={({ isActive }) => `nav-item${isActive ? ' nav-item-active' : ''}`}>
-            <span className="nav-grid-icon"><i /><i /><i /><i /></span>
+            <Icon name="students" size={17} />
             <span>Students</span>
-            <span className="nav-count">09</span>
+          </NavLink>
+          <NavLink to="/teachers" className={({ isActive }) => `nav-item${isActive ? ' nav-item-active' : ''}`}>
+            <Icon name="teachers" size={17} />
+            <span>Teachers</span>
+          </NavLink>
+          <NavLink to="/courses" className={({ isActive }) => `nav-item${isActive ? ' nav-item-active' : ''}`}>
+            <Icon name="courses" size={17} />
+            <span>Courses</span>
           </NavLink>
           <div className="sidebar-bottom">
             <div className="season-art" aria-hidden="true">
