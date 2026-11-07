@@ -1,12 +1,23 @@
+// const API_BASE_URL = import.meta.env.DEV
+//   ? ''
+//   : (import.meta.env.VITE_API_BASE_URL || 'https://student-management-system-wvmf.onrender.com').replace(/\/+$/, '')
+
+
 const API_BASE_URL = import.meta.env.DEV
-  ? ''
-  : (import.meta.env.VITE_API_BASE_URL || 'https://student-management-system-wvmf.onrender.com').replace(/\/+$/, '')
+  ? 'http://127.0.0.1:8000'
+  : (
+      import.meta.env.VITE_API_BASE_URL ||
+      'https://student-management-system-wvmf.onrender.com'
+    ).replace(/\/+$/, '')
 
 const ENDPOINTS = {
   students: '/api/students/',
   teachers: '/api/teachers/',
   courses: '/api/courses/',
 }
+
+
+
 
 function getEndpoint(resource, id) {
   const collection = ENDPOINTS[resource]
