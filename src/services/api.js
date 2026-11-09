@@ -1,7 +1,9 @@
 const API_BASE_URL = import.meta.env.DEV
   ? ''
-  : (import.meta.env.VITE_API_BASE_URL || 'https://student-management-system-wvmf.onrender.com').replace(/\/+$/, '')
+  : (import.meta.env.VITE_API_BASE_URL )
 
+  console.log("url:" ,import.meta.env.VITE_API_BASE_URL)
+   console.log("url 2:" ,import.meta.env)
 
 // const API_BASE_URL = import.meta.env.DEV
 //   ? 'http://127.0.0.1:8000'
@@ -10,6 +12,7 @@ const API_BASE_URL = import.meta.env.DEV
 //       'https://student-management-system-wvmf.onrender.com'
 //     ).replace(/\/+$/, '')
     // console.log("ul: ",import.meta.env)
+    
 const ENDPOINTS = {
   students: '/api/students/',
   teachers: '/api/teachers/',
